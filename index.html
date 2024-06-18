@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="">
+    <header
+      class='flex shadow-md items-center justify-center bg-white font-[sans-serif] min-h-[70px] w-lvw fixed top-0 z-50  bg-white'>
+      <div class='flex items-center justify-around gap-5 w-[80%]'>
+        <a href="javascript:void(0)"><img src="assets/Proskill-Logo.png" class="w-20 sm:w-36">
+
+          <div id="collapseMenu"
+            class='max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50'>
+            <button id="toggleClose" class='lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white p-3'>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-black" viewBox="0 0 320.591 320.591">
+                <path
+                  d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                  data-original="#000000"></path>
+                <path
+                  d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                  data-original="#000000"></path>
+              </svg>
+            </button>
+
+            <ul
+              class='lg:flex gap-x-5 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
+              <li class='mb-6 hidden max-lg:block'>
+                <a href="javascript:void(0)"><img src="https://readymadeui.com/readymadeui.svg" alt="logo"
+                    class='w-36' />
+                </a>
+              </li>
+              <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-3'>
+                <a href='javascript:void(0)'
+                  class='hover:text-[#007bff] text-black block font-semibold text-[15px]'>Home</a>
+              </li>
+              <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><a href='javascript:void(0)'
+                  class='hover:text-[#007bff] text-black  block font-semibold text-[15px]'>About</a>
+              </li>
+              <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><a href='javascript:void(0)'
+                  class='hover:text-[#007bff] text-black block font-semibold text-[15px]'>Our Courses</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class='flex items-center max-lg:ml-auto  sm:space-x-3'>
+            <button class='px-1 py-2 rounded-full '><i
+                class="fa-solid fa-magnifying-glass text-[16px] sm:text-[28px]"></i></button>
+            <button class='px-4 py-2  rounded-full '><img src="/assets/account.png" class="w-[20px] sm:w-[36px]"
+                alt=""></button>
+            <button
+              class="bg-black text-sm h-[24px] sm:h-[36px] w-[70px] sm:w-[90px] text-white rounded-full">Contact</button>
+
+            <button id="toggleOpen" class='lg:hidden'>
+              <svg class="w-7 h-7" fill="#000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </button>
+          </div>
+      </div>
+    </header>
+    <div
+      class="hero-section w-full h-[600px] bg-[url('/assets/heroBg.jpg')] bg-cover flex sm:items-center justify-center p-6 md:p-0 flex-col gap-5">
+      <div>
+        <h1 class="text-5xl md:text-6xl font-black text-white md:text-center">PROSKILL-</h1>
+        <h2 class="text-4xl font-black text-white md:text-center">UPSKILL FROM EXPERT</h2>
+      </div>
+      <p class="text-white md:text-center ">Master New Skills, Elevate Your Expertise. Explore Our Diverse Range of
+        <br /> Courses Today!
+      </p>
+      <button
+        class="w-[180px] md:w-[200px] py-2 bg-white text-black rounded-lg flex gap-2 justify-center items-center">Explore
+        Courses <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+    <div
+      class="hero-section w-full mt-64 mb-64 md:mb-1 md:mt-1 h-[600px] bg-white flex sm:items-center justify-center p-6 md:p-0 flex-col gap-5">
+      <h1 class="text-black font-black text-4xl">OUR COURSES</h1>
+      <div class="card w-full flex flex-col md:flex-row items-center justify-center gap-14">
+        <div
+          class="p-6 card1 flex flex-col items-center justify-between w-[340px] h-[270px] bg-black rounded-xl overflow-hidden bg-[url('/assets/resin.jpg')] bg-cover">
+          <h1 class="font-black text-2xl">Resign Art</h1>
+          <button
+            class="w-[180px] md:w-[160px] py-2 bg-white text-black rounded-full flex gap-2 justify-center items-center">Know
+            More <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div
+          class="p-6 card1 flex flex-col items-center justify-between w-[340px] h-[300px] rounded-xl overflow-hidden bg-[url('/assets/caring-african-american-woman-consoling-sad-woman-before-group-therapy-meeting.jpg')] bg-cover">
+          <h1 class="font-black text-center text-2xl">Counciling <br /> Psychology</h1>
+          <button
+            class="w-[180px] md:w-[160px] py-2 bg-white text-black rounded-full flex gap-2 justify-center items-center">Know
+            More <i class="fa-solid fa-arrow-right"></i></button>
+
+        </div>
+        <div
+          class="p-6 card1 flex flex-col items-center justify-between w-[340px] h-[270px] rounded-xl overflow-hidden bg-[url('/assets/bride-wears-henna-her-hands.jpg')] bg-cover">
+          <h1 class="font-black text-white text-center  text-2xl">Diploma in <br /> Mehandi</h1>
+          <button
+            class="w-[180px] md:w-[160px] py-2 bg-white text-black rounded-full flex gap-2 justify-center items-center">Know
+            More <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <button
+        class="w-[180px] md:w-[200px] py-2 bg-black text-white rounded-lg flex gap-2 justify-center items-center">View
+        all</button>
+    </div>
+
+    <div
+      class="hero-section w-full h-[600px] bg-[url('/assets/heroBg.jpg')] bg-cover flex sm:items-center justify-center p-6 md:p-0 flex-col gap-5">
+      <div>
+        <h1 class="text-5xl md:text-6xl font-bold text-white md:text-center">Unlock Your Potential</h1>
+        <h2 class="text-4xl font-bold text-white md:text-center">with Proskill</h2>
+      </div>
+      <p class="text-white md:text-center ">Welcome to proskill, your gateway to mastering new talents and advancing your carear through expert led courses. We offer a diverse range of hands-on learning experiances, Including counsilling Psychology, Baby kit making, Diploma in mehandi, Accounting, Fashion designing, Jewelry making, Resin art, and public Speaking. Our mission is to empover
+      </p>
+      <button
+        class="w-[180px] md:w-[200px] py-2 bg-white text-black rounded-lg flex gap-2 justify-center items-center">Explore
+        Courses <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+    <div class="w-full h-[1800px] bg-[url('/assets/full-frame-shot-empty-white-background.jpg')] bg-cover flex flex-col items-center">
+      <h1 class="text-2xl font-black text-red-500 text-center pt-6">Why Choose Us?</h1>
+      <div class="choose w-[60%] h-[550px] flex flex-col md:flex-row">
+        <div class="img w-[50%] h-full flex items-center justify-center  border-black">
+          <img src="./assets/1-.png" alt="">
+        </div>
+        <div class="img w-[50%] h-full flex items-center">
+          <div class="text md:border-l-4 w-[300px]">
+            <h1 class="text-2xl font-black">Be a lifelong learner</h1>
+            <p>Courses for people for all ages because we always have something new to learn.</p>
+          </div>
+        </div>
+      </div>
+      <div class="choose w-[60%] h-[550px] flex flex-col md:flex-row">
+        <div class="img w-[50%] h-full flex items-center">
+          <div class="text md:border-r-4 w-[300px]">
+            <h1 class="text-2xl font-black">Be a lifelong learner</h1>
+            <p>Courses for people for all ages because we always have something new to learn.</p>
+          </div>
+        </div>
+        <div class="img w-[50%] h-full flex items-center justify-center  border-black">
+          <img src="./assets/2-.png" alt="">
+        </div>
+      </div>
+      <div class="choose w-[60%] h-[550px] flex flex-col md:flex-row">
+        <div class="img w-[50%] h-full flex items-center justify-center  border-black">
+          <img src="./assets/3-.png" alt="">
+        </div>
+        <div class="img w-[50%] h-full flex items-center">
+          <div class="text md:border-l-4 w-[300px]">
+            <h1 class="text-2xl font-black">Be a lifelong learner</h1>
+            <p>Courses for people for all ages because we always have something new to learn.</p>
+          </div>
+        </div>
+      </div>
+      <div class="choose w-[60%] h-[550px] flex flex-col md:flex-row">
+        <div class="img w-[50%] h-full flex items-center">
+          <div class="text md:border-r-4 w-[300px]">
+            <h1 class="text-2xl font-black">Be a lifelong learner</h1>
+            <p>Courses for people for all ages because we always have something new to learn.</p>
+          </div>
+        </div>
+        <div class="img w-[50%] h-full flex items-center justify-center  border-black">
+          <img src="./assets/4.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="hero-section w-full h-[400px] bg-gradient-to-t from-[#F87064] to-[#FE5493] flex sm:items-center justify-center p-6 md:p-0 flex-col gap-10">
+      <div>
+        <h1 class="text-5xl md:text-4xl font-bold text-white md:text-center">Creative upskilling for people <br/> of all ages!!</h1>
+      </div>
+      <p class="text-white md:text-center">Explore your creativity, Learn from creators.<br/> Earn from your creative skills.
+      </p>
+      <button
+        class="w-[160px] md:w-[200px] py-2 bg-white text-black rounded-lg flex gap-2 justify-center items-center font-bold">Get Started</button>
+    </div>
+    <div class="w-full h-screen bg-cyan-400 flex flex-col items-center">
+    <div class="cards w-full h-1/2 flex items-center justify-center gap-6">
+      <div class="card w-[150px] h-[320px] bg-red-500">
+
+      </div>
+      <div class="card w-[400px] h-[320px] bg-blue-500 flex">
+        <div class="Image w-[50%] h-full bg-green-400"></div>
+      </div>
+      <div class="card w-[150px] h-[320px] bg-cyan-500">
+
+      </div>
+
+    </div>
+            
+            <div class="pagination my-4 flex gap-2">
+              <span class="h-3 w-3 ease-out duration-300 rounded-full bg-black w-8"></span>
+              <span class="h-3 w-3 ease-out duration-300 rounded-full bg-black"></span>
+              <span class="h-3 w-3 ease-out duration-300 rounded-full bg-black"></span>
+              <span class="h-3 w-3 ease-out duration-300 rounded-full bg-black"></span>
+              <span class="h-3 w-3 ease-out duration-300 rounded-full bg-black"></span>
+              <span class="h-3 w-3 ease-out duration-300 rounded-full bg-black md:hidden"></span>
+              <span class="h-3 w-3 ease-out duration-300 rounded-full bg-black md:hidden"></span>
+            </div>
+          </div>
+  </div>
+</body>
+
+</html>
